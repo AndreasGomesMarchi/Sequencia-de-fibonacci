@@ -4,13 +4,14 @@
 #include <locale.h>
 
 int main (){
-	int n=1, i = 0, fn;
-	float raiz, exp1, exp2, elevado1, elevado2;
+	int n=1, i = 0;
+	float raiz, exp1, exp2;
+	double elevado1, elevado2, fn;
 	
 	while(i >= 0){
 		setlocale(LC_ALL, "Portuguese");
 	
-		printf("Escolha um número para definir o limite da sequência de Fibonacci: ");
+		printf("Escolha um nï¿½mero para definir o limite da sequï¿½ncia de Fibonacci: ");
 		scanf("%d", &i);
 		
 		if(i >= 0){
@@ -23,16 +24,18 @@ int main (){
 				
 				fn = (elevado1 - elevado2) / raiz;
 				
-				printf("\nO %d valor vale, respectivamente, %d\n\n", n, fn);
+				printf("\nO %d valor vale, respectivamente, %.0f\n\n", n, fn);
 				
 				n++;
 			}
 			
 		}else{
 			
-			printf("\nVoce digitou um número negativo. A operação será encerrada!\n");
+			printf("\nVoce digitou um nï¿½mero negativo. A operaï¿½ï¿½o serï¿½ encerrada!\n");
 			
 		}
+		
+		n=1;
 	
 	}
 	
