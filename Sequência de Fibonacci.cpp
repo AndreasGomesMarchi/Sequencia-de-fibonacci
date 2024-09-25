@@ -7,9 +7,10 @@ int main (){
 	int n=1, i = 0;
 	float raiz, exp1, exp2;
 	double elevado1, elevado2, fn;
+
+	setlocale(LC_ALL, "Portuguese");
 	
 	while(i >= 0){
-		setlocale(LC_ALL, "Portuguese");
 	
 		printf("Escolha um número para definir o limite da sequência de Fibonacci: ");
 		scanf("%d", &i);
