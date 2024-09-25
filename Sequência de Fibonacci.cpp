@@ -11,7 +11,7 @@ int main (){
 	while(i >= 0){
 		setlocale(LC_ALL, "Portuguese");
 	
-		printf("Escolha um n�mero para definir o limite da sequ�ncia de Fibonacci: ");
+		printf("Escolha um número para definir o limite da sequência de Fibonacci: ");
 		scanf("%d", &i);
 		
 		if(i >= 0){
@@ -31,7 +31,7 @@ int main (){
 			
 		}else{
 			
-			printf("\nVoce digitou um n�mero negativo. A opera��o ser� encerrada!\n");
+			printf("\nVocê digitou um número negativo. A operação será encerrada!\n");
 			
 		}
 		
